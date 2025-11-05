@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My To-Do List</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="css/style.css"> 
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    
+</head>
+<body>
+
+    <div class="container py-5">
+        <header class="text-center mb-5">
+            <h1 class="display-4 fw-bold  p-3 rounded-3 shadow-sm">My To-Do List</h1>
+        </header>
+
+        <div class="row justify-content-center g-4">
+            
+            <div class="col-lg-4 col-12">
+                <div class="card p-4 shadow-lg border-0 rounded-4 custom-card-input">
+                    <h5 class="card-title mb-3 text-success fw-semibold">Add New Task</h5>
+                    
+                    <div class="mb-3">
+                        <label for="new-task" class="form-label">Task Description</label>
+                        <input class="form-control form-control-lg custom-input" type="text" placeholder="What needs to be done?" id="new-task" autofocus>
+                    </div>
+                    
+                    <div class="d-flex gap-2 mt-2">
+                        <button class="btn btn-success btn-lg flex-grow-1 custom-btn" id="add">
+                            <i class="bi bi-plus-circle me-2"></i> Add
+                        </button>
+                        <button class="btn btn-danger btn-lg flex-grow-0 custom-btn" id="removeAll">
+                            <i class="bi bi-trash me-1"></i> Clear All!
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-8 col-12">
+                <div class="card p-4 shadow-lg border-0 rounded-4 custom-card-list">
+                    <h5 class="card-title mb-3 text-secondary fw-semibold">My Task List</h5>
+                    
+                    <ol id="myList" class="list-unstyled">
+                        <li class="list-group-item-header mb-3">Task Description</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkU2RD6mcW7m0EbW8Ck9Oo1nKmDJrQWgEE1lW3c/Gqf6k3F" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</body>
+</html>

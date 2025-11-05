@@ -1,0 +1,102 @@
+body {
+   
+    font-family: 'Roboto', sans-serif; 
+}
+
+
+
+header {
+    background-color: #ffc107 !important;
+   
+}
+
+header  h1 {
+     color: #FFFFFF !important;
+}
+
+.card {
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.custom-card-input:hover, 
+.custom-card-list:hover {
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+.custom-input {
+    border: 1px solid #ced4da;
+    border-radius: 8px; 
+}
+
+.custom-input:focus {
+    border-color: #198754; 
+    box-shadow: 0 0 0 0.25rem rgba(25, 135, 84, 0.25);
+}
+
+.custom-btn {
+    border-radius: 8px;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+.custom-btn:hover {
+    transform: translateY(-2px);
+}
+
+#add {
+    background-color: #198754; 
+    border-color: #198754;
+}
+#add:hover {
+    background-color: #146c43;
+    border-color: #146c43;
+}
+
+#removeAll {
+    background-color: #dc3545; 
+    border-color: #dc3545;
+}
+
+#removeAll:hover {
+    background-color: #bb2d3b;
+    border-color: #bb2d3b;
+}
+
+#myList {
+    padding-left: 0;
+    list-style: none; 
+}
+
+.list-group-item-header {
+    background-color: #f8f9fa; 
+    color: #6c757d;
+    padding: 12px 15px;
+    border-radius: 6px;
+    font-weight: 700;
+    border-bottom: 2px solid #dee2e6;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.list-item-task {
+    background-color: #ffffff;
+    border-left: 5px solid #0d6efd; 
+    margin-bottom: 10px;
+    padding: 12px 15px;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: all 0.2s ease;
+    font-size: 1rem;
+}
+
+.list-item-task:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.list-item-task.completed {
+    background-color: #f1f8e9; 
+    color: #888;
+    text-decoration: line-through;
+    border-left: 5px solid #28a745; 
+}
